@@ -29,7 +29,7 @@
 
 @layer components {
     .button-cta {
-        @apply bg-skin-primary rounded-md text-skin-fill px-4 py-2 tracking-wide hover:bg-skin-primaryhover
+        @apply bg-skin-primary rounded-md text-skin-base px-4 py-2 tracking-wide hover:bg-skin-primaryhover
     }
     .centered {
         @apply flex items-center justify-center
