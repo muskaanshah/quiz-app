@@ -9,6 +9,7 @@ import {
     QuestionPage,
     Results,
     Leaderboard,
+    UserProfile,
 } from "./pages";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
                 <Route path="/question" element={<QuestionPage />} />
                 <Route path="/results" element={<Results />} />
                 <Route path="/leaderboard" element={<Leaderboard />} />
+                <Route path="/user" element={<UserProfile />} />
             </Routes>
         </div>
     );

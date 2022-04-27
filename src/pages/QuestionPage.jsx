@@ -28,7 +28,7 @@ function QuestionPage() {
                     </p>
                 </div>
                 <div className="flex justify-between mt-8">
-                    <button className="border-red-500 border text-red-500 py-2 px-4 rounded-md hover:text-skin-base hover:bg-red-500">
+                    <button className="border-red-700 border text-red-700 py-2 px-4 rounded-md hover:text-skin-base hover:bg-red-700">
                         Quit
                     </button>
                     <button className="button-cta py-2 px-4">Next</button>
