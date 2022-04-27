@@ -2,6 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --color-text-base: 232, 237, 223;
+    --color-text-muted: 172, 172, 172;
+    --color-text-inverted: 36, 36, 35;
+    --color-fill: 17, 24, 39;
+    --color-primary: 5, 150, 105;
+    --color-primary-hover: 4, 120, 87;
+    --color-primary-light: 16,185,129;
+    /* --color-button-muted: 99, 102, 241; */
+  }
+  .theme-light {
+    --color-text-base: 36, 36, 35;
+    --color-text-muted: 172, 172, 172;
+    --color-text-inverted: 232, 237, 223;
+    --color-fill: 232, 237, 223;
+    --color-primary: 5, 150, 105;
+    --color-primary-hover: 4, 120, 87;
+    --color-primary-light: 16,185,129;
+    /* --color-button-muted: 239, 68, 68; */
+  }
+}
+
+@layer components {
+    .button-cta {
+        @apply bg-skin-primary rounded-md text-skin-fill px-4 py-2 tracking-wide
+    }
+    .centered {
+        @apply flex items-center justify-center
+    }
+}
+
+.max-w-70 {
+    width: max(70%, 400px);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

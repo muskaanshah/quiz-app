@@ -1,13 +1,16 @@
-import tw from "tailwind-styled-components";
+import { Routes, Route } from "react-router-dom";
+import { Navbar } from "./components";
+import { Home } from "./pages";
 
 function App() {
     return (
-        <div className="App text-red-300">
-            <HEADER>New</HEADER>
+        <div className="App bg-skin-fill text-skin-base font-basic">
+            <Navbar />
+            <Routes>
+                <Route path="/" element={<Home />} />
+            </Routes>
         </div>
     );
 }
-
-const HEADER = tw.h1`underline text-2xl`;
 
 export default App;
