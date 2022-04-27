@@ -1,10 +1,8 @@
-import tw from "tailwind-styled-components";
-
 function Navbar() {
     return (
-        <NAVBAR>
-            <LOGO>NEW</LOGO>
-            <ICONSWRAPPER>
+        <div className="h-16 shadow-lg shadow-emerald-600/50 sticky top-0 flex items-center px-4 z-10 left-0 right-0 bg-skin-fill">
+            <div className="text-skin-primarylight text-2xl grow">NEW</div>
+            <div className="flex items-center gap-6">
                 <button>
                     <span className="material-icons">light_mode</span>
                 </button>
@@ -14,13 +12,9 @@ function Navbar() {
                 <button>
                     <span className="material-icons">person</span>
                 </button>
-            </ICONSWRAPPER>
-        </NAVBAR>
+            </div>
+        </div>
     );
 }
-
-const NAVBAR = tw.div`h-16 shadow-lg shadow-emerald-600/50 sticky top-0 flex items-center px-4 z-10 left-0 right-0 bg-skin-fill`;
-const LOGO = tw.div`text-skin-primarylight text-2xl grow`;
-const ICONSWRAPPER = tw.div`flex items-center gap-6`;
 
 export { Navbar };

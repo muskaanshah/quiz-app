@@ -9,7 +9,7 @@
     --color-text-inverted: 36, 36, 35;
     --color-fill: 17, 24, 39;
     --color-primary: 5, 150, 105;
-    --color-primary-hover: 4, 120, 87;
+    --color-primary-hover: 5,135,96;
     --color-primary-light: 16,185,129;
     /* --color-button-muted: 99, 102, 241; */
   }
@@ -19,7 +19,7 @@
     --color-text-inverted: 232, 237, 223;
     --color-fill: 232, 237, 223;
     --color-primary: 5, 150, 105;
-    --color-primary-hover: 4, 120, 87;
+    --color-primary-hover: 5,135,96;
     --color-primary-light: 16,185,129;
     /* --color-button-muted: 239, 68, 68; */
   }
@@ -27,10 +27,13 @@
 
 @layer components {
     .button-cta {
-        @apply bg-skin-primary rounded-md text-skin-fill px-4 py-2 tracking-wide
+        @apply bg-skin-primary rounded-md text-skin-fill px-4 py-2 tracking-wide hover:bg-skin-primaryhover
     }
     .centered {
         @apply flex items-center justify-center
+    }
+    .container-body {
+        @apply min-h-[calc(100vh-4rem)] p-4 box-border
     }
 }
 
