@@ -1,6 +1,15 @@
 import { Routes, Route } from "react-router-dom";
 import { Navbar } from "./components";
-import { Home, Login, Explore, Signup, Rules, QuestionPage, Results } from "./pages";
+import {
+    Home,
+    Login,
+    Explore,
+    Signup,
+    Rules,
+    QuestionPage,
+    Results,
+    Leaderboard,
+} from "./pages";
 
 function App() {
     return (
@@ -14,6 +23,7 @@ function App() {
                 <Route path="rules" element={<Rules />} />
                 <Route path="/question" element={<QuestionPage />} />
                 <Route path="/results" element={<Results />} />
+                <Route path="/leaderboard" element={<Leaderboard />} />
             </Routes>
         </div>
     );

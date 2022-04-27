@@ -5,3 +5,4 @@ export { Signup } from "./Signup";
 export { Rules } from "./Rules";
 export { QuestionPage } from "./QuestionPage";
 export { Results } from "./Results";
+export { Leaderboard } from "./Leaderboard";

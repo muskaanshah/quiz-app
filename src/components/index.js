@@ -1,3 +1,3 @@
-export { Navbar } from "./Navbar/Navbar";
-export { QuizResultQuestion } from "./QuizResultQuestion/QuizResultQuestion";
-export { CategoryCard } from "./CategoryCard/CategoryCard";
+export { Navbar } from "./Navbar";
+export { QuizResultQuestion } from "./QuizResultQuestion";
+export { CategoryCard } from "./CategoryCard";

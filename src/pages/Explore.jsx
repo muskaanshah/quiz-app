@@ -1,4 +1,4 @@
-const { CategoryCard } = require("../components/CategoryCard/CategoryCard");
+import { CategoryCard } from "../components";
 
 function Explore() {
     return (
