@@ -40,6 +40,9 @@
     .input-text-auth {
         @apply my-2 box-border w-full bg-skin-fillmuted p-2 rounded text-sm
     }
+    .divider {
+        @apply border-b h-0
+    }
 }
 
 .max-w-70 {

@@ -35,6 +35,11 @@ module.exports = {
                     primarylight: withOpacity("--color-primary-light"),
                 },
             },
+            border: {
+                skin: {
+                    base: withOpacity("--color-text-base"),
+                },
+            },
             fontFamily: {
                 basic: ["Catamaran", "sans-serif"],
             },
