@@ -17,6 +17,7 @@ module.exports = {
                     muted: withOpacity("--color-text-muted"),
                     inverted: withOpacity("--color-text-inverted"),
                     fill: withOpacity("--color-fill"),
+                    fillmuted: withOpacity("--color-fill-muted"),
                     primary: withOpacity("--color-primary"),
                     primaryhover: withOpacity("--color-primary-hover"),
                     primarylight: withOpacity("--color-primary-light"),
@@ -28,6 +29,7 @@ module.exports = {
                     muted: withOpacity("--color-text-muted"),
                     inverted: withOpacity("--color-text-inverted"),
                     fill: withOpacity("--color-fill"),
+                    fillmuted: withOpacity("--color-fill-muted"),
                     primary: withOpacity("--color-primary"),
                     primaryhover: withOpacity("--color-primary-hover"),
                     primarylight: withOpacity("--color-primary-light"),
@@ -35,6 +37,9 @@ module.exports = {
             },
             fontFamily: {
                 basic: ["Catamaran", "sans-serif"],
+            },
+            colors: {
+                primary: "#059669",
             },
         },
     },

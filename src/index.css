@@ -8,6 +8,7 @@
     --color-text-muted: 172, 172, 172;
     --color-text-inverted: 36, 36, 35;
     --color-fill: 17, 24, 39;
+    --color-fill-muted: 30,41,59;
     --color-primary: 5, 150, 105;
     --color-primary-hover: 5,135,96;
     --color-primary-light: 16,185,129;
@@ -18,6 +19,7 @@
     --color-text-muted: 172, 172, 172;
     --color-text-inverted: 232, 237, 223;
     --color-fill: 232, 237, 223;
+    --color-fill-muted: 209,213,219;
     --color-primary: 5, 150, 105;
     --color-primary-hover: 5,135,96;
     --color-primary-light: 16,185,129;
@@ -34,6 +36,9 @@
     }
     .container-body {
         @apply min-h-[calc(100vh-4rem)] p-4 box-border
+    }
+    .input-text-auth {
+        @apply my-2 box-border w-full bg-skin-fillmuted p-2 rounded text-sm
     }
 }
 

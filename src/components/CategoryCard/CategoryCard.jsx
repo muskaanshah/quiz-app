@@ -8,7 +8,7 @@ function CategoryCard() {
             />
             <div className="p-4">
                 <p>Horror</p>
-                <p className="text-sm mt-4">Lorem ipsm blsh blah blah fjdmekf mkk</p>
+                <p className="text-sm mt-2">Lorem ipsm blsh blah blah fjdmekf mkk</p>
                 <button className="button-cta w-full button-block mt-4">
                     Explore this category
                 </button>
