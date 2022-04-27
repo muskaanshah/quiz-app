@@ -1,25 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import tw from "tailwind-styled-components";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App text-red-300">
+            <HEADER>New</HEADER>
+        </div>
+    );
 }
+
+const HEADER = tw.h1`underline text-2xl`;
 
 export default App;
