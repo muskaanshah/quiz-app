@@ -1,4 +1,5 @@
-export { Home } from "./Home/Home";
-export { Explore } from "./Explore/Explore";
-export { Login } from "./authentication/Login";
-export { Signup } from "./authentication/Signup";
+export { Home } from "./Home";
+export { Explore } from "./Explore";
+export { Login } from "./Login";
+export { Signup } from "./Signup";
+export { Rules } from "./Rules";

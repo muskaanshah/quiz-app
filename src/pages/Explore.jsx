@@ -1,4 +1,4 @@
-const { CategoryCard } = require("../../components/CategoryCard/CategoryCard");
+const { CategoryCard } = require("../components/CategoryCard/CategoryCard");
 
 function Explore() {
     return (

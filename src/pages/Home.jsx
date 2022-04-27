@@ -1,4 +1,4 @@
-import { homeillustration } from "../../assets";
+import { homeillustration } from "../assets";
 
 function Home() {
     return (
