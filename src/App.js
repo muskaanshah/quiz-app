@@ -14,7 +14,7 @@ import {
 
 function App() {
     return (
-        <div className="App bg-skin-fill text-skin-base font-basic">
+        <div className="theme-light App bg-skin-fill text-skin-base font-basic">
             <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} />

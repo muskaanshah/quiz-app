@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
+  .theme-dark {
     --color-text-base: 232, 237, 223;
     --color-text-muted: 172, 172, 172;
     --color-text-inverted: 36, 36, 35;
@@ -29,7 +29,7 @@
 
 @layer components {
     .button-cta {
-        @apply bg-skin-primary rounded-md text-skin-base px-4 py-2 tracking-wide hover:bg-skin-primaryhover
+        @apply theme-dark bg-skin-primary rounded-md text-skin-base px-4 py-2 tracking-wide hover:bg-skin-primaryhover
     }
     .centered {
         @apply flex items-center justify-center
@@ -42,6 +42,12 @@
     }
     .divider {
         @apply border-b h-0
+    }
+    .wrong-answer {
+        @apply theme-dark bg-red-700 text-skin-base
+    }
+    .correct-answer {
+        @apply theme-dark bg-green-700 text-skin-base
     }
 }
 
