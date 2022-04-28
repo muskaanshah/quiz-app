@@ -9,7 +9,7 @@ function Signup() {
                     <input
                         type="text"
                         className="input-text-auth"
-                        placeholder="Enter name"
+                        placeholder="Enter full name"
                     />
                     <input
                         type="text"
