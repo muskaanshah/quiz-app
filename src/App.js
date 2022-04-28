@@ -11,10 +11,11 @@ import {
     Leaderboard,
     UserProfile,
 } from "./pages";
+import { app } from "./utils/firebaseConfig";
 
 function App() {
     return (
-        <div className="theme-light App bg-skin-fill text-skin-base font-basic">
+        <div className="theme-dark App bg-skin-fill text-skin-base font-basic">
             <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} />
