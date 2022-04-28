@@ -17,6 +17,11 @@ function Signup() {
                         placeholder="Enter email"
                     />
                     <input
+                        type="text"
+                        className="input-text-auth"
+                        placeholder="Enter user name"
+                    />
+                    <input
                         type="password"
                         className="input-text-auth"
                         placeholder="Enter password"

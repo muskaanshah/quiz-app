@@ -1,4 +1,4 @@
-import { LeaderboardTable } from "../components/LeaderboardTable";
+import { LeaderboardTable } from "../components";
 
 function Leaderboard() {
     return (
