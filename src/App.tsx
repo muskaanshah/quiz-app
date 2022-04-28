@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { Navbar } from "./components";
+import { Navbar } from "./components/index";
 import {
     Home,
     Login,
@@ -10,7 +10,7 @@ import {
     Results,
     Leaderboard,
     UserProfile,
-} from "./pages";
+} from "./pages/index";
 import { app } from "./utils/firebaseConfig";
 
 function App() {
