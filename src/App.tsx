@@ -11,7 +11,6 @@ import {
     Leaderboard,
     UserProfile,
 } from "./pages/index";
-import { app } from "./utils/firebaseConfig";
 
 function App() {
     return (

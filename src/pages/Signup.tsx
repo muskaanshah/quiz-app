@@ -1,22 +1,29 @@
-import { useState } from "react";
+import { app } from "../utils/firebaseConfig";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { userSignup } from "../services";
-import { app } from "../utils/firebaseConfig";
 import { getAuth } from "firebase/auth";
 
+interface Form {
+    name: string;
+    email: string;
+    username: string;
+    password: string;
+}
+
 function Signup() {
-    const auth = getAuth();
-    const [signUpForm, setSignUpForm] = useState({
+    const auth = getAuth(app);
+    const [signUpForm, setSignUpForm] = useState<Form>({
         name: "",
         email: "",
         username: "",
         password: "",
     });
 
-    const formFieldInputHandler = (value, field) => {
+    const formFieldInputHandler = (value: string, field: string) => {
         setSignUpForm({ ...signUpForm, [field]: value });
     };
-    const signUpFormHandler = (e) => {
+    const signUpFormHandler = (e: React.FormEvent) => {
         e.preventDefault();
         userSignup(auth, signUpForm.email, signUpForm.password);
     };

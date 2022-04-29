@@ -1,19 +1,24 @@
+import { app } from "../utils/firebaseConfig";
 import { useState } from "react";
 import { userLogin } from "../services";
-import { app } from "../utils/firebaseConfig";
 import { getAuth } from "firebase/auth";
 
+interface Form {
+    email: string;
+    password: string;
+}
+
 function Login() {
-    const auth = getAuth();
-    const [signInForm, setSignInForm] = useState({
+    const auth = getAuth(app);
+    const [signInForm, setSignInForm] = useState<Form>({
         email: "",
         password: "",
     });
 
-    const formFieldInputHandler = (value, field) => {
+    const formFieldInputHandler = (value: string, field: string) => {
         setSignInForm({ ...signInForm, [field]: value });
     };
-    const signInFormHandler = (e) => {
+    const signInFormHandler = (e: React.FormEvent) => {
         e.preventDefault();
         userLogin(auth, signInForm.email, signInForm.password);
     };
@@ -57,7 +62,7 @@ function Login() {
                         className="bg-skin-fillmuted rounded-md text-skin-base px-4 py-2 tracking-wide w-full my-2 cursor-pointer centered gap-2 box-border hover:border-emerald-600 hover:border"
                         onClick={signInWithGoogleHandler}
                     >
-                        <i class="fa-brands fa-google"></i>
+                        <i className="fa-brands fa-google"></i>
                         <span>Login with Google</span>
                     </button>
                 </form>
